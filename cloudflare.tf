@@ -14,7 +14,7 @@ provider "cloudflare" {
 }
 
 
-variable "cloudflare_api_token" {}
+
 
 resource "cloudflare_record" "www" {
   zone_id = "72217ecd07884307a08420b709cdd4d6"
