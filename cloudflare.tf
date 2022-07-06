@@ -9,7 +9,8 @@ terraform {
 
 
 provider "cloudflare" {
-  api_token = "tstnYaXKOLxR_fdEYpwJgupEvHgE-Rb0DRCFjA0I"
+  api_token = var.cloudflare_api_token
+  
 }
 
 
