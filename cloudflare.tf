@@ -7,6 +7,8 @@ terraform {
   }
 }
 
+variable "cloudflare_zone_id" {
+}
 provider "cloudflare" {
   api_token = "tstnYaXKOLxR_fdEYpwJgupEvHgE-Rb0DRCFjA0I"
 }
