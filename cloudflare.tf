@@ -14,7 +14,7 @@ provider "cloudflare" {
 
 
 resource "cloudflare_record" "www" {
-  zone_id = "72217ecd07884307a08420b709cdd4d6"
+  zone_id = var.cloudflare_zone_id
   name    = "www"
   value   = "203.0.113.10"
   type    = "A"
