@@ -3,3 +3,9 @@ variable "cloudflare_api_token" {
     default = ""
 
 }
+
+variable "cloudflare_zone_id" {
+    type = string
+    default = ""
+
+}

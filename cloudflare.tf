@@ -16,8 +16,8 @@ provider "cloudflare" {
 
 
 
-resource "cloudflare_record" "www" {
-  zone_id = "72217ecd07884307a08420b709cdd4d6"
+resource "cloudflare_record" "test" {
+  zone_id = var.cloudflare_zone_id
   name    = "www"
   value   = "203.10.113.10"
   type    = "A"
@@ -25,8 +25,8 @@ resource "cloudflare_record" "www" {
 }
 
 
-resource "cloudflare_record" "joka" {
-  zone_id = "72217ecd07884307a08420b709cdd4d6"
+resource "cloudflare_record" "jokatest" {
+  zone_id = var.cloudflare_zone_id
   name    = "joka"
   value   = "10.10.113.10"
   type    = "A"
