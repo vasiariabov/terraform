@@ -16,18 +16,18 @@ provider "cloudflare" {
 
 
 
-resource "cloudflare_record" "test" {
+resource "cloudflare_record" "info" {
   zone_id = var.cloudflare_zone_id
-  name    = "www"
-  value   = "203.10.113.10"
+  name    = "info"
+  value   = "12.10.12.10"
   type    = "A"
   
 }
 
 
-resource "cloudflare_record" "jokatest" {
+resource "cloudflare_record" "log" {
   zone_id = var.cloudflare_zone_id
-  name    = "joka"
+  name    = "log"
   value   = "10.10.113.10"
   type    = "A"
   
